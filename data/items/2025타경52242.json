@@ -7,7 +7,7 @@
   "priority": 3,
   "watchlist": true,
   "created_at": "2026-04-21T19:05:00+09:00",
-  "updated_at": "2026-04-21T19:05:00+09:00",
+  "updated_at": "2026-04-22T08:10:00+09:00",
   "property": {
     "court": "수원지방법원 본원",
     "address": "경기도 수원시 장안구 율전동 334-13 화남아파트 101동 1층 110호",
@@ -79,7 +79,12 @@
     "loan_assumption_ltv_pct": 72,
     "required_cash_est": 89000000,
     "budget_fit": false,
-    "budget_fit_label": "스트레치"
+    "budget_fit_label": "스트레치",
+    "bid_price_est": 290000000,
+    "contingency_cost_est": 8700000,
+    "total_cash_needed_est": 89000000,
+    "user_budget": 80000000,
+    "budget_comment": "입찰 자체는 가능할 수 있으나 예비비와 추가 비용을 감안하면 빠듯합니다."
   },
   "strategy": {
     "bid_price_conservative": 280000000,
@@ -108,5 +113,97 @@
   "notes": [
     "신건 성격으로 할인 메리트 약함",
     "안전하지만 싸지는 않은 후보"
-  ]
+  ],
+  "checklist": {
+    "completion_pct": 70,
+    "blockers": [
+      "입찰가 상한 설정"
+    ],
+    "items": [
+      {
+        "id": "registry",
+        "label": "등기부 확인",
+        "status": "done",
+        "importance": "high",
+        "note": "확인 완료"
+      },
+      {
+        "id": "base_right",
+        "label": "말소기준권리 확인",
+        "status": "done",
+        "importance": "high",
+        "note": "확인 완료"
+      },
+      {
+        "id": "senior_tenant",
+        "label": "선순위 임차인 여부 확인",
+        "status": "done",
+        "importance": "high",
+        "note": "확인 완료"
+      },
+      {
+        "id": "occupancy",
+        "label": "전입세대/점유 확인",
+        "status": "done",
+        "importance": "high",
+        "note": "확인 완료"
+      },
+      {
+        "id": "management_fee",
+        "label": "관리비 체납 확인",
+        "status": "todo",
+        "importance": "medium",
+        "note": "추가 확인 필요"
+      },
+      {
+        "id": "site_visit",
+        "label": "임장 여부 확인",
+        "status": "todo",
+        "importance": "medium",
+        "note": "추가 확인 필요"
+      },
+      {
+        "id": "market_compare",
+        "label": "실거래 3건 이상 비교",
+        "status": "done",
+        "importance": "high",
+        "note": "확인 완료"
+      },
+      {
+        "id": "repair_scope",
+        "label": "수리 필요 범위 확인",
+        "status": "done",
+        "importance": "medium",
+        "note": "확인 완료"
+      },
+      {
+        "id": "max_bid",
+        "label": "입찰가 상한 설정",
+        "status": "todo",
+        "importance": "high",
+        "note": "추가 확인 필요"
+      },
+      {
+        "id": "exit_strategy",
+        "label": "출구전략 작성",
+        "status": "done",
+        "importance": "medium",
+        "note": "확인 완료"
+      }
+    ]
+  },
+  "decision_summary": {
+    "title": "관찰 후보",
+    "one_line": "권리는 깔끔하지만 가격 메리트가 약하고 예산이 빠듯해 입문자는 신중히 접근해야 합니다.",
+    "beginner_fit_level": "caution",
+    "beginner_fit_reason": "안전해 보여도 싸지 않으면 수익이 줄어들기 때문에 초보자에게는 우선순위가 낮습니다."
+  },
+  "risk_flags": {
+    "pass_reasons": [],
+    "caution_reasons": [
+      "예산 빠듯",
+      "신건이라 가격 메리트 약함"
+    ],
+    "red_flags": []
+  }
 }
