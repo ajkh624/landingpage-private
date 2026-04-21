@@ -1,0 +1,111 @@
+{
+  "schema_version": "v1",
+  "item_id": "auction-2025-55649-001",
+  "case_no": "2025타경55649",
+  "source_type": "court_auction",
+  "status": "watch",
+  "priority": 4,
+  "watchlist": false,
+  "created_at": "2026-04-21T19:05:00+09:00",
+  "updated_at": "2026-04-21T19:05:00+09:00",
+  "property": {
+    "court": "수원지방법원 본원",
+    "address": "경기도 수원시 장안구 정자동 36-23 송학아파트 6층 621호",
+    "region": "수원",
+    "sub_region": "장안구",
+    "dong": "정자동",
+    "asset_type": "아파트",
+    "use_type": "주거용",
+    "area_sqm": 31.74,
+    "land_area_sqm": 12.31,
+    "floor": 6,
+    "building_name": "송학아파트",
+    "unit_label": "6층 621호"
+  },
+  "auction": {
+    "appraisal_price": 123000000,
+    "minimum_price": 60270000,
+    "minimum_ratio_pct": 49.0,
+    "bid_date": "2026-04-28",
+    "fail_count": 2,
+    "bid_deposit_rate_pct": 10,
+    "bid_deposit_amount": 6027000,
+    "state_code": "10",
+    "state_label": "공고"
+  },
+  "market": {
+    "comparison_type": "exact",
+    "market_price_avg": 70000000,
+    "market_price_median": 70000000,
+    "market_price_latest": 70000000,
+    "comparison_sample_count": 1,
+    "minimum_vs_avg_pct": -13.9,
+    "appraisal_vs_avg_pct": 75.71,
+    "price_merit_score": 5,
+    "price_merit_label": "보통",
+    "comparison_basis": "동일 단지 exact 실거래 1건 비교"
+  },
+  "rights": {
+    "special_rights": [],
+    "tenant_exists": true,
+    "senior_tenant": false,
+    "tenant_deposit": null,
+    "move_in_date": "2022-11-14",
+    "fixed_date": null,
+    "dividend_request_date": null,
+    "base_right_type": "근저당권설정",
+    "base_right_amount": 114000000,
+    "rights_risk_score": 5,
+    "rights_risk_level": "medium",
+    "rights_risk_summary": "특수권리 표시는 없으나 점유/임차 공개 정보가 불명확함.",
+    "takeover_risk": false
+  },
+  "occupancy": {
+    "occupancy_status": "unknown",
+    "occupancy_summary": "외국인 체류 이력 및 임차인 추정, 실제 점유 불명확",
+    "eviction_difficulty_score": 6,
+    "eviction_difficulty_level": "medium",
+    "occupancy_risk_level": "medium",
+    "occupancy_risk_summary": "소형 물건이지만 점유관계 정리 필요"
+  },
+  "cost": {
+    "acquisition_tax_est": 1400000,
+    "legal_cost_est": 800000,
+    "repair_cost_est": 2000000,
+    "eviction_cost_est": 2500000,
+    "holding_cost_est": 1000000,
+    "broker_fee_sell_est": 1000000,
+    "total_cost_est": 67770000,
+    "loan_assumption_ltv_pct": 60,
+    "required_cash_est": 32500000,
+    "budget_fit": true,
+    "budget_fit_label": "가능"
+  },
+  "strategy": {
+    "bid_price_conservative": 55000000,
+    "bid_price_neutral": 60000000,
+    "bid_price_aggressive": 62000000,
+    "expected_margin_pct": 3.5,
+    "exit_strategy": "소형 평형 일반 매도",
+    "holding_period_est_months": 4,
+    "final_opinion": "예산에는 맞지만 할인폭이 작고 점유 불확실성 있어 관찰 후보",
+    "recommendation": "watch"
+  },
+  "links": {
+    "raw_report_md": "raw/2026-04-21-수원-경공매-분석.md",
+    "detail_page": "https://madangs.com/caview?m_code=1020250055649001",
+    "source_urls": [
+      "https://madangs.com/caview?m_code=1020250055649001",
+      "https://rt.molit.go.kr"
+    ]
+  },
+  "tags": [
+    "수원",
+    "아파트",
+    "소형평형",
+    "관찰"
+  ],
+  "notes": [
+    "예산 적합하지만 최우선 후보는 아님"
+  ]
+}

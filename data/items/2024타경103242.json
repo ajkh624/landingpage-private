@@ -1,0 +1,112 @@
+{
+  "schema_version": "v1",
+  "item_id": "auction-2024-103242-001",
+  "case_no": "2024타경103242",
+  "source_type": "court_auction",
+  "status": "review",
+  "priority": 2,
+  "watchlist": true,
+  "created_at": "2026-04-21T19:05:00+09:00",
+  "updated_at": "2026-04-21T19:05:00+09:00",
+  "property": {
+    "court": "수원지방법원 본원",
+    "address": "경기도 수원시 장안구 조원동 881 수원한일아파트 148동 3층 301호",
+    "region": "수원",
+    "sub_region": "장안구",
+    "dong": "조원동",
+    "asset_type": "아파트",
+    "use_type": "주거용",
+    "area_sqm": 59.84,
+    "land_area_sqm": 24.79,
+    "floor": 3,
+    "building_name": "수원한일아파트",
+    "unit_label": "148동 3층 301호"
+  },
+  "auction": {
+    "appraisal_price": 422000000,
+    "minimum_price": 295400000,
+    "minimum_ratio_pct": 70.0,
+    "bid_date": "2026-04-29",
+    "fail_count": 1,
+    "bid_deposit_rate_pct": 10,
+    "bid_deposit_amount": 29540000,
+    "state_code": "10",
+    "state_label": "공고"
+  },
+  "market": {
+    "comparison_type": "near",
+    "market_price_avg": 423115900,
+    "market_price_median": 440000000,
+    "market_price_latest": 470000000,
+    "comparison_sample_count": 82,
+    "minimum_vs_avg_pct": -30.18,
+    "appraisal_vs_avg_pct": -0.26,
+    "price_merit_score": 8,
+    "price_merit_label": "좋음",
+    "comparison_basis": "조원동 59㎡대 유사 실거래 비교"
+  },
+  "rights": {
+    "special_rights": [],
+    "tenant_exists": false,
+    "senior_tenant": false,
+    "tenant_deposit": null,
+    "move_in_date": null,
+    "fixed_date": null,
+    "dividend_request_date": null,
+    "base_right_type": "근저당권설정",
+    "base_right_amount": 224400000,
+    "rights_risk_score": 2,
+    "rights_risk_level": "low",
+    "rights_risk_summary": "특수권리 표시 없음. 임차인 없음. 권리 구조 비교적 단순.",
+    "takeover_risk": false
+  },
+  "occupancy": {
+    "occupancy_status": "owner_or_family",
+    "occupancy_summary": "현황조사상 채무자 겸 소유자 세대 전입으로 보임",
+    "eviction_difficulty_score": 3,
+    "eviction_difficulty_level": "low",
+    "occupancy_risk_level": "low",
+    "occupancy_risk_summary": "점유 리스크는 낮은 편이나 현장 재확인 필요"
+  },
+  "cost": {
+    "acquisition_tax_est": 6500000,
+    "legal_cost_est": 1500000,
+    "repair_cost_est": 3000000,
+    "eviction_cost_est": 1000000,
+    "holding_cost_est": 2000000,
+    "broker_fee_sell_est": 2500000,
+    "total_cost_est": 309940000,
+    "loan_assumption_ltv_pct": 72,
+    "required_cash_est": 79000000,
+    "budget_fit": true,
+    "budget_fit_label": "가능"
+  },
+  "strategy": {
+    "bid_price_conservative": 280000000,
+    "bid_price_neutral": 295000000,
+    "bid_price_aggressive": 305000000,
+    "expected_margin_pct": 12.5,
+    "exit_strategy": "실거주 수요층 대상 일반 매도",
+    "holding_period_est_months": 4,
+    "final_opinion": "권리상 무난하고 가격 메리트가 있어 실전 검토 1순위",
+    "recommendation": "review"
+  },
+  "links": {
+    "raw_report_md": "raw/2026-04-21-수원-경공매-분석.md",
+    "detail_page": "https://madangs.com/caview?m_code=1020240103242001",
+    "source_urls": [
+      "https://madangs.com/caview?m_code=1020240103242001",
+      "https://rt.molit.go.kr"
+    ]
+  },
+  "tags": [
+    "수원",
+    "아파트",
+    "권리깨끗",
+    "예산적합"
+  ],
+  "notes": [
+    "59㎡형이라 환금성 우수",
+    "대출 조건 확인 시 실전 후보"
+  ]
+}

@@ -1,0 +1,185 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jae.local/schemas/auction-item-v1.schema.json",
+  "title": "Auction Item V1",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "item_id",
+    "case_no",
+    "source_type",
+    "status",
+    "created_at",
+    "updated_at",
+    "property",
+    "auction",
+    "market",
+    "rights",
+    "occupancy",
+    "cost",
+    "strategy",
+    "links"
+  ],
+  "properties": {
+    "schema_version": { "type": "string", "const": "v1" },
+    "item_id": { "type": "string", "minLength": 1 },
+    "case_no": { "type": "string", "minLength": 1 },
+    "source_type": {
+      "type": "string",
+      "enum": ["court_auction", "gongmae"]
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "candidate",
+        "analyzing",
+        "review",
+        "bidding",
+        "won",
+        "lost",
+        "selling",
+        "sold",
+        "hold",
+        "pass"
+      ]
+    },
+    "priority": { "type": "integer", "minimum": 1, "maximum": 5 },
+    "watchlist": { "type": "boolean" },
+    "created_at": { "type": "string", "minLength": 1 },
+    "updated_at": { "type": "string", "minLength": 1 },
+    "property": {
+      "type": "object",
+      "required": ["court", "address", "region", "sub_region", "asset_type", "area_sqm"],
+      "properties": {
+        "court": { "type": "string" },
+        "address": { "type": "string" },
+        "region": { "type": "string" },
+        "sub_region": { "type": "string" },
+        "dong": { "type": ["string", "null"] },
+        "asset_type": { "type": "string" },
+        "use_type": { "type": ["string", "null"] },
+        "area_sqm": { "type": "number" },
+        "land_area_sqm": { "type": ["number", "null"] },
+        "floor": { "type": ["integer", "null"] },
+        "building_name": { "type": ["string", "null"] },
+        "unit_label": { "type": ["string", "null"] }
+      },
+      "additionalProperties": false
+    },
+    "auction": {
+      "type": "object",
+      "required": ["appraisal_price", "minimum_price", "bid_date", "fail_count"],
+      "properties": {
+        "appraisal_price": { "type": "number" },
+        "minimum_price": { "type": "number" },
+        "minimum_ratio_pct": { "type": ["number", "null"] },
+        "bid_date": { "type": "string" },
+        "fail_count": { "type": "integer", "minimum": 0 },
+        "bid_deposit_rate_pct": { "type": ["number", "null"] },
+        "bid_deposit_amount": { "type": ["number", "null"] },
+        "state_code": { "type": ["string", "null"] },
+        "state_label": { "type": ["string", "null"] }
+      },
+      "additionalProperties": false
+    },
+    "market": {
+      "type": "object",
+      "required": ["comparison_type", "comparison_sample_count", "price_merit_score"],
+      "properties": {
+        "comparison_type": { "type": "string", "enum": ["exact", "near", "exact_or_near"] },
+        "market_price_avg": { "type": ["number", "null"] },
+        "market_price_median": { "type": ["number", "null"] },
+        "market_price_latest": { "type": ["number", "null"] },
+        "comparison_sample_count": { "type": "integer", "minimum": 0 },
+        "minimum_vs_avg_pct": { "type": ["number", "null"] },
+        "appraisal_vs_avg_pct": { "type": ["number", "null"] },
+        "price_merit_score": { "type": "integer", "minimum": 1, "maximum": 10 },
+        "price_merit_label": { "type": ["string", "null"] },
+        "comparison_basis": { "type": ["string", "null"] }
+      },
+      "additionalProperties": false
+    },
+    "rights": {
+      "type": "object",
+      "required": ["special_rights", "tenant_exists", "senior_tenant", "rights_risk_score", "rights_risk_level", "takeover_risk"],
+      "properties": {
+        "special_rights": { "type": "array", "items": { "type": "string" } },
+        "tenant_exists": { "type": "boolean" },
+        "senior_tenant": { "type": "boolean" },
+        "tenant_deposit": { "type": ["number", "null"] },
+        "move_in_date": { "type": ["string", "null"] },
+        "fixed_date": { "type": ["string", "null"] },
+        "dividend_request_date": { "type": ["string", "null"] },
+        "base_right_type": { "type": ["string", "null"] },
+        "base_right_amount": { "type": ["number", "null"] },
+        "rights_risk_score": { "type": "integer", "minimum": 1, "maximum": 10 },
+        "rights_risk_level": { "type": "string", "enum": ["low", "medium", "high"] },
+        "rights_risk_summary": { "type": ["string", "null"] },
+        "takeover_risk": { "type": "boolean" }
+      },
+      "additionalProperties": false
+    },
+    "occupancy": {
+      "type": "object",
+      "required": ["occupancy_status", "eviction_difficulty_score", "eviction_difficulty_level", "occupancy_risk_level"],
+      "properties": {
+        "occupancy_status": {
+          "type": "string",
+          "enum": ["vacant", "owner", "owner_or_family", "tenant", "unknown", "mixed"]
+        },
+        "occupancy_summary": { "type": ["string", "null"] },
+        "eviction_difficulty_score": { "type": "integer", "minimum": 1, "maximum": 10 },
+        "eviction_difficulty_level": { "type": "string", "enum": ["low", "medium", "high"] },
+        "occupancy_risk_level": { "type": "string", "enum": ["low", "medium", "high"] },
+        "occupancy_risk_summary": { "type": ["string", "null"] }
+      },
+      "additionalProperties": false
+    },
+    "cost": {
+      "type": "object",
+      "required": ["total_cost_est", "required_cash_est", "budget_fit"],
+      "properties": {
+        "acquisition_tax_est": { "type": ["number", "null"] },
+        "legal_cost_est": { "type": ["number", "null"] },
+        "repair_cost_est": { "type": ["number", "null"] },
+        "eviction_cost_est": { "type": ["number", "null"] },
+        "holding_cost_est": { "type": ["number", "null"] },
+        "broker_fee_sell_est": { "type": ["number", "null"] },
+        "total_cost_est": { "type": "number" },
+        "loan_assumption_ltv_pct": { "type": ["number", "null"] },
+        "required_cash_est": { "type": "number" },
+        "budget_fit": { "type": "boolean" },
+        "budget_fit_label": { "type": ["string", "null"] }
+      },
+      "additionalProperties": false
+    },
+    "strategy": {
+      "type": "object",
+      "required": ["bid_price_conservative", "bid_price_neutral", "bid_price_aggressive", "final_opinion", "recommendation"],
+      "properties": {
+        "bid_price_conservative": { "type": ["number", "null"] },
+        "bid_price_neutral": { "type": ["number", "null"] },
+        "bid_price_aggressive": { "type": ["number", "null"] },
+        "expected_margin_pct": { "type": ["number", "null"] },
+        "exit_strategy": { "type": ["string", "null"] },
+        "holding_period_est_months": { "type": ["integer", "null"] },
+        "final_opinion": { "type": "string" },
+        "recommendation": { "type": "string", "enum": ["pass", "watch", "review", "bid"] }
+      },
+      "additionalProperties": false
+    },
+    "links": {
+      "type": "object",
+      "required": ["raw_report_md", "detail_page", "source_urls"],
+      "properties": {
+        "raw_report_md": { "type": ["string", "null"] },
+        "detail_page": { "type": ["string", "null"] },
+        "source_urls": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": false
+    },
+    "tags": { "type": "array", "items": { "type": "string" } },
+    "notes": { "type": "array", "items": { "type": "string" } }
+  },
+  "additionalProperties": false
+}

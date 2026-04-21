@@ -1,0 +1,113 @@
+{
+  "schema_version": "v1",
+  "item_id": "auction-2025-51294-001",
+  "case_no": "2025타경51294",
+  "source_type": "court_auction",
+  "status": "pass",
+  "priority": 5,
+  "watchlist": false,
+  "created_at": "2026-04-21T19:05:00+09:00",
+  "updated_at": "2026-04-21T19:05:00+09:00",
+  "property": {
+    "court": "수원지방법원 본원",
+    "address": "경기도 수원시 팔달구 지동 138-3 진우아파트 4층 403호",
+    "region": "수원",
+    "sub_region": "팔달구",
+    "dong": "지동",
+    "asset_type": "아파트",
+    "use_type": "주거용",
+    "area_sqm": 59.91,
+    "land_area_sqm": 27.16,
+    "floor": 4,
+    "building_name": "진우아파트",
+    "unit_label": "4층 403호"
+  },
+  "auction": {
+    "appraisal_price": 235000000,
+    "minimum_price": 164500000,
+    "minimum_ratio_pct": 70.0,
+    "bid_date": "2026-05-15",
+    "fail_count": 1,
+    "bid_deposit_rate_pct": 10,
+    "bid_deposit_amount": 16450000,
+    "state_code": "10",
+    "state_label": "공고"
+  },
+  "market": {
+    "comparison_type": "exact",
+    "market_price_avg": 270000000,
+    "market_price_median": 270000000,
+    "market_price_latest": 270000000,
+    "comparison_sample_count": 1,
+    "minimum_vs_avg_pct": -39.07,
+    "appraisal_vs_avg_pct": -12.96,
+    "price_merit_score": 9,
+    "price_merit_label": "매우좋음",
+    "comparison_basis": "동일 단지 exact 실거래 비교"
+  },
+  "rights": {
+    "special_rights": [
+      "선순위임차인"
+    ],
+    "tenant_exists": true,
+    "senior_tenant": true,
+    "tenant_deposit": null,
+    "move_in_date": "2005-12-01",
+    "fixed_date": null,
+    "dividend_request_date": null,
+    "base_right_type": "근저당권설정",
+    "base_right_amount": 38500000,
+    "rights_risk_score": 8,
+    "rights_risk_level": "high",
+    "rights_risk_summary": "선순위임차인 표시. 전입일 오래되어 인수/명도 리스크 보수적으로 판단 필요.",
+    "takeover_risk": true
+  },
+  "occupancy": {
+    "occupancy_status": "tenant",
+    "occupancy_summary": "유기종 점유로 추정, 가족관계성 점유 기재",
+    "eviction_difficulty_score": 7,
+    "eviction_difficulty_level": "high",
+    "occupancy_risk_level": "high",
+    "occupancy_risk_summary": "가격 메리트 대비 명도·권리 확인 필요성이 큼"
+  },
+  "cost": {
+    "acquisition_tax_est": 4200000,
+    "legal_cost_est": 1200000,
+    "repair_cost_est": 2500000,
+    "eviction_cost_est": 5000000,
+    "holding_cost_est": 2000000,
+    "broker_fee_sell_est": 2200000,
+    "total_cost_est": 179400000,
+    "loan_assumption_ltv_pct": 68,
+    "required_cash_est": 74000000,
+    "budget_fit": true,
+    "budget_fit_label": "가능"
+  },
+  "strategy": {
+    "bid_price_conservative": 150000000,
+    "bid_price_neutral": 160000000,
+    "bid_price_aggressive": 164500000,
+    "expected_margin_pct": null,
+    "exit_strategy": "권리 확인 전 비추천",
+    "holding_period_est_months": null,
+    "final_opinion": "가격은 매우 매력적이지만 선순위임차인 리스크로 패스 권고",
+    "recommendation": "pass"
+  },
+  "links": {
+    "raw_report_md": "raw/2026-04-21-수원-경공매-분석.md",
+    "detail_page": "https://madangs.com/caview?m_code=1020250051294001",
+    "source_urls": [
+      "https://madangs.com/caview?m_code=1020250051294001",
+      "https://rt.molit.go.kr"
+    ]
+  },
+  "tags": [
+    "수원",
+    "아파트",
+    "선순위임차인",
+    "패스"
+  ],
+  "notes": [
+    "가격할인폭 크지만 권리 확인 전 접근 금지"
+  ]
+}

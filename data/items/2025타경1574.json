@@ -1,0 +1,116 @@
+{
+  "schema_version": "v1",
+  "item_id": "auction-2025-1574-001",
+  "case_no": "2025타경1574",
+  "source_type": "court_auction",
+  "status": "pass",
+  "priority": 4,
+  "watchlist": false,
+  "created_at": "2026-04-21T19:05:00+09:00",
+  "updated_at": "2026-04-21T19:05:00+09:00",
+  "property": {
+    "court": "수원지방법원 본원",
+    "address": "경기도 수원시 영통구 매탄동 1258 매탄 에듀파크시티1 103동 17층 1704호",
+    "region": "수원",
+    "sub_region": "영통구",
+    "dong": "매탄동",
+    "asset_type": "아파트",
+    "use_type": "주거용",
+    "area_sqm": 84.51,
+    "land_area_sqm": 50.33,
+    "floor": 17,
+    "building_name": "매탄 에듀파크시티1",
+    "unit_label": "103동 17층 1704호"
+  },
+  "auction": {
+    "appraisal_price": 513000000,
+    "minimum_price": 359100000,
+    "minimum_ratio_pct": 70.0,
+    "bid_date": "2026-04-27",
+    "fail_count": 1,
+    "bid_deposit_rate_pct": 10,
+    "bid_deposit_amount": 35910000,
+    "state_code": "10",
+    "state_label": "공고"
+  },
+  "market": {
+    "comparison_type": "near",
+    "market_price_avg": 596350500,
+    "market_price_median": 570000000,
+    "market_price_latest": 655000000,
+    "comparison_sample_count": 275,
+    "minimum_vs_avg_pct": -39.78,
+    "appraisal_vs_avg_pct": -13.98,
+    "price_merit_score": 9,
+    "price_merit_label": "매우좋음",
+    "comparison_basis": "매탄동 84㎡대 유사 실거래 비교"
+  },
+  "rights": {
+    "special_rights": [
+      "선순위임차인",
+      "임차권등기"
+    ],
+    "tenant_exists": true,
+    "senior_tenant": true,
+    "tenant_deposit": 415000000,
+    "move_in_date": "2021-02-15",
+    "fixed_date": "2020-12-17",
+    "dividend_request_date": null,
+    "base_right_type": "근저당권설정",
+    "base_right_amount": 100000000,
+    "rights_risk_score": 9,
+    "rights_risk_level": "high",
+    "rights_risk_summary": "선순위임차인 및 임차권등기, 고액보증금으로 인수/분쟁 리스크 큼.",
+    "takeover_risk": true
+  },
+  "occupancy": {
+    "occupancy_status": "tenant",
+    "occupancy_summary": "임차인 점유로 추정, 폐문부재 및 점유 추가확인 필요",
+    "eviction_difficulty_score": 8,
+    "eviction_difficulty_level": "high",
+    "occupancy_risk_level": "high",
+    "occupancy_risk_summary": "명도 난이도 높고 시간/비용 리스크 큼"
+  },
+  "cost": {
+    "acquisition_tax_est": 7800000,
+    "legal_cost_est": 1800000,
+    "repair_cost_est": 3000000,
+    "eviction_cost_est": 6000000,
+    "holding_cost_est": 3000000,
+    "broker_fee_sell_est": 3500000,
+    "total_cost_est": 381200000,
+    "loan_assumption_ltv_pct": 70,
+    "required_cash_est": 113000000,
+    "budget_fit": false,
+    "budget_fit_label": "불가"
+  },
+  "strategy": {
+    "bid_price_conservative": 300000000,
+    "bid_price_neutral": 330000000,
+    "bid_price_aggressive": 350000000,
+    "expected_margin_pct": null,
+    "exit_strategy": "권리 해소 전 비추천",
+    "holding_period_est_months": null,
+    "final_opinion": "가격 메리트는 크지만 권리 리스크가 과도해 패스 권고",
+    "recommendation": "pass"
+  },
+  "links": {
+    "raw_report_md": "raw/2026-04-21-수원-경공매-분석.md",
+    "detail_page": "https://madangs.com/caview?m_code=1020250001574001",
+    "source_urls": [
+      "https://madangs.com/caview?m_code=1020250001574001",
+      "https://rt.molit.go.kr"
+    ]
+  },
+  "tags": [
+    "수원",
+    "아파트",
+    "선순위임차인",
+    "임차권등기",
+    "패스"
+  ],
+  "notes": [
+    "가격만 보면 매력적이지만 초보 진입 금지",
+    "권리정리 확정 전 입찰 비추천"
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "schema_version": "v1",
+  "item_id": "auction-2025-52242-001",
+  "case_no": "2025타경52242",
+  "source_type": "court_auction",
+  "status": "watch",
+  "priority": 3,
+  "watchlist": true,
+  "created_at": "2026-04-21T19:05:00+09:00",
+  "updated_at": "2026-04-21T19:05:00+09:00",
+  "property": {
+    "court": "수원지방법원 본원",
+    "address": "경기도 수원시 장안구 율전동 334-13 화남아파트 101동 1층 110호",
+    "region": "수원",
+    "sub_region": "장안구",
+    "dong": "율전동",
+    "asset_type": "아파트",
+    "use_type": "주거용",
+    "area_sqm": 59.93,
+    "land_area_sqm": 23.44,
+    "floor": 1,
+    "building_name": "화남아파트",
+    "unit_label": "101동 1층 110호"
+  },
+  "auction": {
+    "appraisal_price": 297000000,
+    "minimum_price": 297000000,
+    "minimum_ratio_pct": 100.0,
+    "bid_date": "2026-04-29",
+    "fail_count": 0,
+    "bid_deposit_rate_pct": 10,
+    "bid_deposit_amount": 29700000,
+    "state_code": "10",
+    "state_label": "공고"
+  },
+  "market": {
+    "comparison_type": "exact",
+    "market_price_avg": 290000000,
+    "market_price_median": 290000000,
+    "market_price_latest": 290000000,
+    "comparison_sample_count": 2,
+    "minimum_vs_avg_pct": 2.41,
+    "appraisal_vs_avg_pct": 2.41,
+    "price_merit_score": 4,
+    "price_merit_label": "보통",
+    "comparison_basis": "동일 단지 exact 실거래 2건 비교"
+  },
+  "rights": {
+    "special_rights": [],
+    "tenant_exists": false,
+    "senior_tenant": false,
+    "tenant_deposit": null,
+    "move_in_date": null,
+    "fixed_date": null,
+    "dividend_request_date": null,
+    "base_right_type": "근저당권설정",
+    "base_right_amount": 126000000,
+    "rights_risk_score": 2,
+    "rights_risk_level": "low",
+    "rights_risk_summary": "특수권리 없음. 임차인 없음. 소유자 가족 점유로 보임.",
+    "takeover_risk": false
+  },
+  "occupancy": {
+    "occupancy_status": "owner_or_family",
+    "occupancy_summary": "현황조사상 소유자 가족 점유",
+    "eviction_difficulty_score": 2,
+    "eviction_difficulty_level": "low",
+    "occupancy_risk_level": "low",
+    "occupancy_risk_summary": "점유 위험은 낮으나 1층 물건 특성 고려 필요"
+  },
+  "cost": {
+    "acquisition_tax_est": 6200000,
+    "legal_cost_est": 1500000,
+    "repair_cost_est": 2500000,
+    "eviction_cost_est": 500000,
+    "holding_cost_est": 2000000,
+    "broker_fee_sell_est": 2400000,
+    "total_cost_est": 309100000,
+    "loan_assumption_ltv_pct": 72,
+    "required_cash_est": 89000000,
+    "budget_fit": false,
+    "budget_fit_label": "스트레치"
+  },
+  "strategy": {
+    "bid_price_conservative": 280000000,
+    "bid_price_neutral": 290000000,
+    "bid_price_aggressive": 297000000,
+    "expected_margin_pct": 3.0,
+    "exit_strategy": "실수요 일반 매도 또는 저위험 보유",
+    "holding_period_est_months": 4,
+    "final_opinion": "권리는 깔끔하지만 가격 메리트가 약해 안전형 참고 후보",
+    "recommendation": "watch"
+  },
+  "links": {
+    "raw_report_md": "raw/2026-04-21-수원-경공매-분석.md",
+    "detail_page": "https://madangs.com/caview?m_code=1020250052242001",
+    "source_urls": [
+      "https://madangs.com/caview?m_code=1020250052242001",
+      "https://rt.molit.go.kr"
+    ]
+  },
+  "tags": [
+    "수원",
+    "아파트",
+    "권리깨끗",
+    "가격메리트약함"
+  ],
+  "notes": [
+    "신건 성격으로 할인 메리트 약함",
+    "안전하지만 싸지는 않은 후보"
+  ]
+}
